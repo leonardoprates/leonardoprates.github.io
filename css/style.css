@@ -19,7 +19,7 @@ body {
   margin: 25px auto 0 auto;
   width: 200px;
   height: 200px;
-  background: top center no-repeat transparent url('logo.png');
+  background: top center no-repeat transparent url('../logo.png');
   background-size: cover;
 }
 
