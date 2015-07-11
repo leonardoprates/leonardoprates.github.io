@@ -38,7 +38,7 @@ a:hover, a:active
   color #0f0
   text-decoration none
   
-footer p
+footer
   margin-top 50px
   font-size 0.7 em
   text-align center
