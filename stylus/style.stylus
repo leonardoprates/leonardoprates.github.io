@@ -1,0 +1,44 @@
+body
+  margin 0
+  padding 0
+  background #000
+  font-family sans-serif
+  color #9e9e9e
+
+#container
+  max-width 500px
+  margin 0 auto
+
+  #main
+    margin 10px
+
+#logo
+  margin 25px auto 0 auto
+  width 200px
+  height 200px
+
+  background top center no-repeat transparent url('logo.png')
+  background-size cover
+
+h1
+  color #fff
+  
+#main
+  h1
+    margin 50px 0 25px 0
+    
+li
+  list-style none
+  
+a:link, a:visited
+  color #fff
+  text-decoration none
+
+a:hover, a:active
+  color #0f0
+  text-decoration none
+  
+footer p
+  margin-top 50px
+  font-size 0.7 em
+  text-align center
