@@ -1,5 +1,20 @@
 from subprocess import call
-call(["git", "add", "*"])
-comment = raw_input("Enter commit comment: ")
-call(["git", "commit", "-m", comment])
-call(["git", "push", "origin", "master"])
+
+prompt = raw_input('Enter 0 for \'Update\' \nEnter 1 for a custom comment\n')
+
+def git(choice):
+
+  option = 'commit -m '
+
+  if choice == '1':
+      option += raw_input('Enter comment: ')
+      print option
+  else:
+      option += 'Update'
+      print option
+
+  call(['git', 'add', '*'])
+  call(['git', 'commit', '-m', option])
+  call(['git', 'push', 'origin', 'master'])
+
+git(prompt)
