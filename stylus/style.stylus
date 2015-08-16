@@ -12,17 +12,12 @@ body
   text-align center
   
 .header
-  text-align left
-  font-size 1.1em
-  
-.title
-  font-variant small-caps
-  font-size 1.3em
-  text-align center
-  
-.headline
-  padding-top 15px
-  
+  h1
+    font-size 2.3em
+    font-variant small-caps
+    letter-spacing 15px
+    margin-left 15px
+
 p
   padding-bottom 15px
 
@@ -39,3 +34,11 @@ p
 
 .jumbotron
   background #000
+
+a:link, a:visited
+  text-decoration none
+  color #fff
+
+a:hover, a:active
+  text-decoration none
+  color #aaa
