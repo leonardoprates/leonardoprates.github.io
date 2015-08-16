@@ -2,6 +2,7 @@ h1, h2, h3, h4, h5, p, .label, .title
   font-family 'Source Code Pro'
 
 body
+  margin-top 50px
   background #000
   color #fff
 
