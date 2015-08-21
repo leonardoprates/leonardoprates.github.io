@@ -1,7 +1,5 @@
-/*body
-  display none*/
-body,
-.jumbotron {
+body {
+  display: none;
   background: #000;
 }
 .test,
