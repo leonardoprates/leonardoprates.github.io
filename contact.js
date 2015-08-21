@@ -47,7 +47,7 @@ console.log(
                       + "\n" +
             "   Email          hello@odran037.io                   "
                       + "\n" +
-            "  Resume          http://odran037.io/resume.pdf       "
+            "  Resume          http://leonardoprates.com           "
                       + "\n" +
             "======================================================"
             );
