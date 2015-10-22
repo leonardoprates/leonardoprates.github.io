@@ -19,6 +19,9 @@ Skills
 
 Experience
 
+  Developer Mentor - DevMountain - TX 2015 - Current
+    Responsible for  mentoring students and ensuring their success in learning full stack web developement.
+
   Senior Remote Support – Weebly - FL 2013 – Current
     Responsible for providing chat and email-based support to customers relating to website design, ecommerce, email and domain DNS setup. Resolve billing issues and assist customers purchasing different products and solutions to suit their needs. Also responsible for assisting other support agents with issues and questions that require advanced support.
 
