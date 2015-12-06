@@ -1,9 +1,10 @@
 
 
+View my portfolio at http://odran037.io
+
 About
 Highly motivated and hardworking individual with an insatiable appetite for learning. Passionate about programming and solving problems. Loves working in a team and able to stay positive and solve problems using expertise and research.
 
-View my portfolio at http://odran037.io
 Skills
 HTML5, CSS3, JavaScript, Jade, Stylus, CoffeeScript, jQuery, AngularJS, Node.js, MongoDB, Express, Ajax, JSON, REST, Git, GitHub, Heroku, DNS, FTP, Linux, OS X, Windows
 Basic: Python, Ruby, PHP, MySQL, Apache, React, Backbone.js, Underscore
