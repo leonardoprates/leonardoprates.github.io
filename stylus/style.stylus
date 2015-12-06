@@ -24,7 +24,7 @@ body
   padding-top 25px
 
 .title
-  color #ccc
+  color #333
   text-decoration underline
   
 footer
