@@ -1,6 +1,6 @@
 body
   display none
-  background #000
+  // background #000
 
 .headline
   font-weight 800
