@@ -1,8 +1,10 @@
 body {
   display: none;
-  /*background: #000;*/
+  background-color: #008db6;
+  background-image: linear-gradient(161deg, #008db6 0%, #35005f 100%);
+  background-attachment: fixed;
+  color: #fff;
 }
-.test,
 .headline {
   font-weight: 800;
 }
@@ -22,11 +24,10 @@ body {
   margin: 25px;
 }
 .text-col {
-  border-top: 1px #333 solid;
+  border-top: 1px #ccc solid;
   padding-top: 25px;
 }
 .title {
-  color: #333;
   text-decoration: underline;
 }
 footer {

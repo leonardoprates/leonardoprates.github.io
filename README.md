@@ -1,13 +1,11 @@
-# A Pen created at CodePen.io.
+# [lnrd:prts]
 
-### This project started on CodePen and is now hosted on Github Pages:
+### Hello!
 
-[leonardoprates.github.io](http://leonardoprates.github.io)
+##### Its me, LEO
 
-[leonardoprates.com](http://leonardoprates.com)
+[This is my "resume"](http://leonardoprates.com)
 
-### The pen serves as testing grounds for new ideas for the site
+[Check out my "portfolio"](http://odran037.io)
 
-[http://codepen.io/odran037/pen/gpzdrP](http://codepen.io/odran037/pen/GJaKQQ)
-
- 
+Hire me!
