@@ -5,7 +5,7 @@ var Header = React.createClass({
       <div className="row">
         <div className="col-md-10">
           <h1 className="headline">L<span className="sm-caps">eonardo </span>P<span className="sm-caps">rates</span></h1>
-          <p><span>Resume </span> <a href="#" role="button" className="btn btn-success btn-xs">PDF</a> <a href="#" role="button" className="btn btn-primary btn-xs">DOC</a> <a href="#" role="button" className="btn btn-warning btn-xs">TXT</a></p>
+          <p><span>Resume </span> <a href="../resume/Leonardo-Prates.pdf" role="button" className="btn btn-success btn-xs">PDF</a> <a href="../resume/Leonardo-Prates.docx" role="button" className="btn btn-primary btn-xs">DOC</a> <a href="../resume/Leonardo-Prates.txt" role="button" className="btn btn-warning btn-xs">TXT</a></p>
         </div>
         <div className="col-md-2 info">
           <p>Hayward CA 94544</p>

@@ -1,0 +1,35 @@
+LEONARDO PRATES
+1500 Jackson St Apt 305, Dallas, TX 75201 • (702) 498-0327
+leonardo.prates@outook.com • leonardoprates.com
+
+ABOUT
+Highly motivated and hardworking individual with an insatiable appetite for learning. Passionate about programming and solving problems. Loves working in a team and able to stay positive and solve problems using expertise and research.
+
+SKILLS
+HTML5, CSS3, JavaScript, Jade, Stylus, CoffeeScript, jQuery, AngularJS, Node.js, MongoDB, Express, Ajax, JSON, REST, Git, GitHub, Heroku, DNS, FTP, Linux, OS X, Windows Basic: Python, Ruby, PHP, MySQL, Apache, React, Backbone.js, Underscore
+
+EXPERIENCE
+Developer / Project Manager — Sked.us — 2015 - Present
+Overseeing developers with full stack web development expertise using the MEAN stack, and developing mobile iOS and Android platform with Cordova, Ionic and AngularJS.
+
+Developer Mentor — DevMountain — 2013 - Present
+Responsible mentoring students and ensuring their success in learning full stack web development. Practiced pair programming and advised students on best programming practices, HTML/CSS preprocessors, CSS and Javascript libraries and frameworks.
+
+Full stack web development trainee  — DevMountain — 2015
+Immersive web development program focusing on the MEAN stack as well as, HTML, CSS, JavaScript, jQuery, Ajax, Angular, Firebase, MongoDB, Node and React.
+
+Senior remote support — Weebly — 2013 - Present
+Responsible for providing chat and email-based support to customers relating to website design, ecommerce, email and domain DNS setup. Resolve billing issues and assist customers purchasing different products and solutions to suit their needs. Also responsible for assisting other support agents with issues and questions that require advanced support.
+
+IT Specialist  — Freelance — 2003 - 2013
+Notebook and desktop repair, Home network installation and security implementation. Printer, copier and fax installation and repair.
+
+IT Specialist — CompTechCare — 2007
+Provided notebook and desktop repair, network management services, implemented off-site data backup, remote assistance, designed diagrams of small and medium business networks. Set up servers, routers, switches, hubs and VPNs.
+
+Field service engineer — Xerox (Sal Serv.) — 2001 - 2002
+Performed full range of maintenance, technical diagnostics, software loads, installation, removal, retrofit of Xerox products and customer call assistance, provided customer training on assigned products in accordance with current field procedures and responsible for assigned company assets (i.e. parts, tools, communication and computing devices, vehicles).
+
+LANGUAGES
+English and Portuguese — Native
+Spanish — Conversational
