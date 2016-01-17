@@ -45,7 +45,7 @@ var Footer = React.createClass({
 
 
 React.render(
-  <div classNameName='container'>
+  <div className='container'>
     <Header />
     <About />
     <Footer />
