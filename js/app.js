@@ -13,8 +13,8 @@ var About = React.createClass({
   render: function() {
     return (
       <section className="text-center">
-        <p>Hello! My name is Leo. I make things with code. I also like wood working and bicyles.</p>
-        <div className="icons">
+        <p className="caps">Hello! My name is Leo. I make things with code. I also like wood working and bicyles.</p>
+         <div className="icons">
           <a href="#"><i className="fa fa-github fa-3x"></i></a>
           <a href="#"><i className="fa fa-codepen fa-3x"></i></a>
           <a href="#"><i className="fa fa-linkedin fa-3x"></i></a>
@@ -31,7 +31,7 @@ var Footer = React.createClass({
   render: function() {
     return (
       <footer className="col-lg-8 col-lg-offset-2">
-        <p className="caps">
+        <p>
           <span className="sm-caps">leonardo prates </span>
           <i className="fa fa-gears"></i>
           <span className="date">2015</span> |
