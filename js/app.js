@@ -20,7 +20,7 @@ var About = React.createClass({
           <a href="https://www.linkedin.com/in/odran037" target="_blank"><i className="fa fa-linkedin fa-3x"></i></a>
           <a href="https://twitter.com/odran037" target="_blank"><i className="fa fa-twitter fa-3x"></i></a>
           <a href="mailto:hello@odran037.io" target="_blank"><i className="fa fa-envelope fa-3x"></i></a>
-          <a href="resume/index.html" target="_blank"><i className="fa fa-file-text-o fa-3x"></i></a>
+          <a href="resume/Leonardo-Prates.pdf" target="_blank"><i className="fa fa-file-text-o fa-3x"></i></a>
         </div>
       </section>
     );
