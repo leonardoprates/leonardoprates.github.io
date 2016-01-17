@@ -31,7 +31,7 @@ var Footer = React.createClass({
   render: function() {
     return (
       <footer className="col-lg-8 col-lg-offset-2">
-        <p>
+        <p className="caps">
           <span className="sm-caps">leonardo prates </span>
           <i className="fa fa-gears"></i>
           <span className="date">2015</span> |
