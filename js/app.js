@@ -30,7 +30,7 @@ var About = React.createClass({
 var Footer = React.createClass({
   render: function() {
     return (
-      <footer className="col-lg-8 col-ld-offset-2">
+      <footer className="col-lg-8 col-lg-offset-2">
         <p>
           <span className="sm-caps">leonardo prates </span>
           <i className="fa fa-gears"></i>
