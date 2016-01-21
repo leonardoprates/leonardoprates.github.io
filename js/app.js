@@ -14,6 +14,7 @@ var About = React.createClass({
     return (
       <section className="text-center">
         <p className="caps">Hello! My name is Leo. I make things with code. I also like wood working and bicyles.</p>
+        <p id="portfolio-button"><a href="http://odran037.io">portfolio</a></p>
         <div className="icons">
           <a href="https://github.com/odran037" target="_blank"><i className="fa fa-github fa-3x"></i></a>
           <a href="https://codepen.io/odran037" target="_blank"><i className="fa fa-codepen fa-3x"></i></a>

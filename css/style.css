@@ -37,4 +37,12 @@ footer p {
   font-size: 0.8em;
 }
 
-
+#portfolio-button {
+  display: inline-block;
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+  padding: 10px 20px 10px 23px;
+  margin: 15px;
+  font-variant: small-caps;
+  letter-spacing: 3px;
+}
