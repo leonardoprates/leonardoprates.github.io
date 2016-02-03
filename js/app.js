@@ -3,7 +3,7 @@ var Header = React.createClass({
   render: function() {
     return (
       <header className="jumbotron">
-        <h1 className="text-center">[<span className="caps">lnrd:prts</span>]</h1>
+        <h1 className="text-center">[<span className="caps">lnrd_prts</span>]</h1>
       </header>
     );
   }
