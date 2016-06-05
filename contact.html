@@ -7,6 +7,14 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.5/slate/bootstrap.min.css" rel="stylesheet">
   <style>
   @import url(https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900);
+
+  #home {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
   body {
     display: none;
     margin: 10%;
@@ -41,6 +49,7 @@
     font-family: 'Orbitron', sans-serif !important;
     letter-spacing: 3px;
   }
+
   .contact-button:hover {
     background: rgba(0,0,0,0.5);
     text-decoration: none;
@@ -48,6 +57,11 @@
   </style>
 </head>
 <body>
+  <h3 id="home">
+    <a href="/">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+  </h3>
   <div class="container">
     <p class="lead">Hello! Thank you for your interest in reaching out.</p>
     <p>If you are an employer, please note that I am honored that you want to contact me. However, I am currently employed. You should still feel free to reach out. I am always looking for interesting projects. Please note that since I am currently employed
