@@ -1,6 +1,6 @@
-It is my hope to secure a position with a well-established corporation such as yours where I can build my career and become a valuable member of your team. 
+It is my hope to secure a position with GitLab where I can build my career and become a valuable member of your team. 
 
-I believe my experience and skills with Javascript, jQuery, Angular, Underscore, Node, MongoDB, HTML, CSS, Jade and Stylus make me a good fit for your team. I learn quickly and can comfortably adapt to constantly changing technology.
+I believe my experience and skills with Javascript, jQuery, Angular, Underscore, Node, Firebase, HTML, CSS, Jade, Stylus and Sass make me a good fit for your team. I learn quickly and can comfortably adapt to constantly changing technology.
 
 I have the ability to solve problems as they occur and to communicate with non-technical clients in a way they can understand. I have excellent analytical skills and the ability to manage several projects at once while staying focused. I can follow orders and work as a team without any problems but I also have the ability to work alone and still meet tight deadlines.
 
