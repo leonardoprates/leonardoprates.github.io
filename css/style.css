@@ -85,3 +85,8 @@ a:link, a:visited, a:hover, a:active {
   cursor: pointer;
   text-decoration: underline;
 }
+
+#closeModal {
+  background-color: rgba(0,0,0,0.0);
+  border-color: #fff;
+}
