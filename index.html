@@ -15,25 +15,34 @@
       const body = document.body;
       const h1 = document.createElement('h1');
       const a = document.createElement('a');
+      const h1Styles = {
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        textAlign: 'center'
+      };
+      const aStyles = {
+        color: '#000000',
+        textDecoration: 'none',
+        borderBottom: '5px dotted #000',
+        fontFamily: 'monospace',
+        fontVariant: 'small-caps'
+      };
 
-      title.appendChild(titleText);
-      head.appendChild(title);
+      for (let s in h1Styles) {
+        h1.style[s] = h1Styles[s];
+      }
 
-      h1.style.position = 'absolute';
-      h1.style.top = '50%';
-      h1.style.left = '50%';
-      h1.style.transform = 'translate(-50%, -50%)';
-      h1.style.textAlign = 'center';
+      for (let s in aStyles) {
+        a.style[s] = aStyles[s];
+      }
 
       a.href = `https://odran037.github.io`;
       a.text = label;
-      a.target = '_blank';
-      a.style.color = '#000000';
-      a.style.textDecoration = 'none';
-      a.style.borderBottom = '5px dotted #000';
-      a.style.fontFamily = 'monospace';
-      a.style.fontVariant = 'small-caps';
 
+      title.appendChild(titleText);
+      head.appendChild(title);
       h1.appendChild(a);
       body.appendChild(h1);
     </script>
