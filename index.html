@@ -1,50 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="https://dummyimage.com/16x16/000/66ff91.png&text=LP">
-  </head>
   <body>
-    <script>
-      const label = 'leonardo prates';
-      const head = document.head;
-      const title = document.createElement('title');
-      const titleText = document.createTextNode(label);
-      const body = document.body;
-      const h1 = document.createElement('h1');
-      const a = document.createElement('a');
-      const h1Styles = {
-        position: 'absolute',
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
-        textAlign: 'center'
-      };
-      const aStyles = {
-        color: '#000000',
-        textDecoration: 'none',
-        borderBottom: '5px dotted #000',
-        fontFamily: 'monospace',
-        fontVariant: 'small-caps'
-      };
-
-      for (let s in h1Styles) {
-        h1.style[s] = h1Styles[s];
-      }
-
-      for (let s in aStyles) {
-        a.style[s] = aStyles[s];
-      }
-
-      a.href = `https://odran037.github.io`;
-      a.text = label;
-
-      title.appendChild(titleText);
-      head.appendChild(title);
-      h1.appendChild(a);
-      body.appendChild(h1);
-    </script>
+    <script src="index.js"></script>
   </body>
 </html>
