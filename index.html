@@ -13,18 +13,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
   </head>
   <body>
-    <div id="overlay"></div>
-    <div id="main">
+    <div id="overlay">
       <i class="fa fa-bicycle fa-5x"></i>
     </div>
     <script>
       const t = document.getElementsByTagName('title')[0];
       const b = document.body;
       const o = document.getElementById('overlay');
-      const m = document.getElementById('main');
       const i = document.getElementsByTagName('i')[0];
-
-      setInterval(() => t.innerText = `LP - ${Date.now()}`);
 
       b.style.background = 'url("https://source.unsplash.com/featured/?landscape") no-repeat 50% 50% fixed';
       b.style.backgroundSize = 'cover';
@@ -36,25 +32,16 @@
       o.style.background = 'rgba(0,0,0,0.5)';
       o.style.zIndex = '5';
 
-      m.style.textAlign = 'center';
-      m.style.position = 'absolute';
-      m.style.top = '50%';
-      m.style.left = '50%';
-      m.style.transform = 'translate(-50%, -50%)';
-      m.style.background = '#009fad';
-      m.style.borderRadius = '50%';
-      m.style.boxShadow = '1px 1px 15px #009fad';
-      m.style.width = '200px';
-      m.style.height = '200px';
-      m.style.zIndex = '10';
-      m.style.cursor = 'pointer';
-
-      m.addEventListener('click', () => document.location.href = 'https://odran037.github.io');
-
       i.style.position = 'absolute';
       i.style.top = '50%';
       i.style.left = '50%';
       i.style.transform = 'translate(-50%, -50%)';
+      i.style.zIndex = '10';
+      i.style.cursor = 'pointer';
+
+      setInterval(() => t.innerText = `LP - ${Date.now()}`);
+
+      i.addEventListener('click', () => document.location.href = 'https://odran037.github.io');
     </script>
   </body>
 </html>
