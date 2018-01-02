@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/odran037
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://leonardoprates.github.io
+  * I am odran037 (https://keybase.io/odran037) on keybase.
+  * I have a public key ASBlm1TsNleMtK3zccOsGxaMMGUCBJxMXWm1bRNY8tldjgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120131f24639c0e19d174741c5c666f15c99ba8a427414ef483a5bb6d0238333e5c0a",
+      "host": "keybase.io",
+      "kid": "0120659b54ec36578cb4adf371c3ac1b168c306502049c4c5d69b56d1358f2d95d8e0a",
+      "uid": "e31a872631d83eff40b1d530ab9c2519",
+      "username": "odran037"
+    },
+    "merkle_root": {
+      "ctime": 1514920626,
+      "hash": "02d6f9cf0834ac7e4f8b81c7dd7eb8463c7ff58da76bf9c4d32023eec27268f23d23c4368714d31df720c0c1b88ddce88ebe53292ade718d08b751f42e5f07bf",
+      "hash_meta": "b654e6a030351f8e85c691f79f6f9b489a8ac9d2989e1a843fc7314568addb82",
+      "seqno": 1878842
+    },
+    "service": {
+      "hostname": "leonardoprates.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.38"
+  },
+  "ctime": 1514920646,
+  "expire_in": 504576000,
+  "prev": "76ca5a08c754aa79762770b50b4d6828cdcb3e7ada4fbbef780ae138ac4026f0",
+  "seqno": 10,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgZZtU7DZXjLSt83HDrBsWjDBlAgScTF1ptW0TWPLZXY4Kp3BheWxvYWTFA1F7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwMTMxZjI0NjM5YzBlMTlkMTc0NzQxYzVjNjY2ZjE1Yzk5YmE4YTQyNzQxNGVmNDgzYTViYjZkMDIzODMzM2U1YzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwNjU5YjU0ZWMzNjU3OGNiNGFkZjM3MWMzYWMxYjE2OGMzMDY1MDIwNDljNGM1ZDY5YjU2ZDEzNThmMmQ5NWQ4ZTBhIiwidWlkIjoiZTMxYTg3MjYzMWQ4M2VmZjQwYjFkNTMwYWI5YzI1MTkiLCJ1c2VybmFtZSI6Im9kcmFuMDM3In0sIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNTE0OTIwNjI2LCJoYXNoIjoiMDJkNmY5Y2YwODM0YWM3ZTRmOGI4MWM3ZGQ3ZWI4NDYzYzdmZjU4ZGE3NmJmOWM0ZDMyMDIzZWVjMjcyNjhmMjNkMjNjNDM2ODcxNGQzMWRmNzIwYzBjMWI4OGRkY2U4OGViZTUzMjkyYWRlNzE4ZDA4Yjc1MWY0MmU1ZjA3YmYiLCJoYXNoX21ldGEiOiJiNjU0ZTZhMDMwMzUxZjhlODVjNjkxZjc5ZjZmOWI0ODlhOGFjOWQyOTg5ZTFhODQzZmM3MzE0NTY4YWRkYjgyIiwic2Vxbm8iOjE4Nzg4NDJ9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoibGVvbmFyZG9wcmF0ZXMuZ2l0aHViLmlvIiwicHJvdG9jb2wiOiJodHRwczoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMzgifSwiY3RpbWUiOjE1MTQ5MjA2NDYsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJwcmV2IjoiNzZjYTVhMDhjNzU0YWE3OTc2Mjc3MGI1MGI0ZDY4MjhjZGNiM2U3YWRhNGZiYmVmNzgwYWUxMzhhYzQwMjZmMCIsInNlcW5vIjoxMCwidGFnIjoic2lnbmF0dXJlIn2jc2lnxECKemVMcY4eB4kU5JRpvn7D+bRKuUVW4aucB39wMenMoPF5ZuqEEnujeOsGEhXXyWe1+U4RXLDh8ZZ76yWFbTAIqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgrIMbmGwadUgSbVlM25rHZGITOOtGFBUMd9BETmaf0bujdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/odran037
+
+==================================================================
