@@ -5,46 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <meta name="description" content="Family Freedom Business Code Coffee Tea Mountain Biking Hiking Travel Nomads Nature Outdoors Guns Knives Wood Working" />
-    <meta name="keywords" content="Family, Freedom, Business, Code, Coffee, Tea, Mountain Biking, Hiking, Travel, Nomads, Nature, Outdoors, Guns, Knives, Wood Working">
-    <meta http-equiv="refresh" content="3;url=https://odran037.github.io"> </meta>
-    <title>LP - 53662736772837</title>
-    <script>window.setTimeout(() => window.location.href = 'https://odran037.github.io', 3000);</script>
-    <link rel="shortcut icon" href="https://dummyimage.com/256x256/009fad/fff.png&text=LP" type="image/x-icon">
+    <title>53662736772837</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Play:400,700">
     <style>
-      a:link, a:hover, a:active, a:visited {
-        color: #000;
+      body {
+        background: url('https://source.unsplash.com/featured/?landscape') no-repeat 50% 50% fixed;
+        background-size: cover;
+        font-variant: small-caps !important;
+        font-family: 'Play', sans-serif;
       }
-      div {
+      .container-fluid {
+        background: rgba(0,0,0,0.7);
         position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        -o-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        bottom: 0;
+      }
+      h1 {
+        font-weight: 700 !important;
+        text-transform: initial;
+      }
+      a {
+        letter-spacing: 2px;
+        padding-right: 5px;
       }
     </style>
   </head>
   <body>
-    <div>
-      <a href="https://odran037.github.io">
-        <i class="fa fa-bicycle fa-5x"></i>
-      </a>
+    <div class="container-fluid mt-4 pt-4 pb-4">
+      <div class="row justify-content-md-center mt-4 mb-4">
+        <div class="col col-lg-6 mt-4 mb-4 text-center">
+          <h1 class="display-4 mb-2 text-white">Leonardo Prates</h1>
+          <p id="n" data-initial="53662736772837">53662736772837</p>
+          <a class="link text-white" href="https://github.com/odran037" target="_blank" data-initial="github">github</a>
+          <a class="link text-white" href="https://codepen.io/odran037" target="_blank" data-initial="codepen">codepen</a>
+          <a class="link text-white" href="https://glitch.com/@odran037" target="_blank" data-initial="glitch">glitch</a>
+          <a class="link text-white" href="https://keybase.io/odran037/key.asc" target="_blank" data-initial="gpg">gpg</a>
+        </div>
+      </div>
     </div>
     <script>
-      setInterval(() => document.getElementsByTagName('title')[0].innerText = `LP - ${Date.now()}`);
+      const getRandomCharacter = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+
+      const generate = (limit, min, max) => {
+
+        let charactersList = [];
+
+        do {
+          charactersList.push(String.fromCharCode(getRandomCharacter(min, max)));
+        } while (--limit);
+
+        return charactersList.join('');
+
+      };
+
+
+      setInterval(function () {
+
+        let initial = document.querySelector('#n').getAttribute('data-initial');
+        let len = initial.length;
+
+        for (let i = 0; i < 100; i++) {
+          setTimeout(() => {
+            let gen = generate(len, 48, 57);
+            document.querySelector('#n').innerText = gen;
+            document.title = gen;
+          }, i * 10);
+        }
+
+        setTimeout(() => {
+          document.querySelector('#n').innerText = initial;
+          document.title = initial;
+        }, 1000);
+
+      }, 5000);
+
+      document.querySelectorAll('.link').forEach(function (e) {
+
+        e.addEventListener('mouseenter', () => {
+
+          let initial = e.getAttribute('data-initial');
+          let len = initial.length;
+
+          for (let i = 0; i < 10; i++) {
+            setTimeout(() => {
+              e.innerText = generate(len, 97, 122);
+            }, i * 10);
+          }
+
+          setTimeout(() => {
+            e.innerText = initial;
+          }, 100);
+
+        });
+
+      });
     </script>
   </body>
 </html>
-
-
-
-
-
-
-
 
