@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Play:400,700">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
       body {
-        background: url('https://source.unsplash.com/featured/?landscape') no-repeat 50% 50% fixed;
+        background: url('https://source.unsplash.com/1600x900/?nature,mountain') no-repeat 50% 50% fixed;
         background-size: cover;
         font-variant: small-caps !important;
         font-family: 'Play', sans-serif;
@@ -27,8 +28,7 @@
         text-transform: initial;
       }
       a {
-        letter-spacing: 2px;
-        padding-right: 5px;
+        padding: 10px;
       }
     </style>
   </head>
@@ -38,10 +38,9 @@
         <div class="col col-lg-6 text-center">
           <h1 class="display-4 mb-2 text-white">Leonardo Prates</h1>
           <p id="n" data-initial="53662736772837">53662736772837</p>
-          <a class="link text-white" href="https://github.com/odran037" target="_blank" data-initial="github">github</a>
-          <a class="link text-white" href="https://codepen.io/odran037" target="_blank" data-initial="codepen">codepen</a>
-          <a class="link text-white" href="https://glitch.com/@odran037" target="_blank" data-initial="glitch">glitch</a>
-          <a class="link text-white" href="https://keybase.io/odran037/key.asc" target="_blank" data-initial="gpg">gpg</a>
+          <a class="text-white" href="https://odran037.github.io"><i class="fa fa-github fa-3x"></i></a>
+          <a class="text-white" href="https://odran037.gitlab.io"><i class="fa fa-gitlab fa-3x"></i></a>
+          <a class="text-white" href="https://odran037.bitbucket.io"><i class="fa fa-bitbucket fa-3x"></i></a>
         </div>
       </div>
     </div>
@@ -81,26 +80,6 @@
 
       }, 5000);
 
-      document.querySelectorAll('.link').forEach(function (e) {
-
-        e.addEventListener('mouseenter', () => {
-
-          let initial = e.getAttribute('data-initial');
-          let len = initial.length;
-
-          for (let i = 0; i < 10; i++) {
-            setTimeout(() => {
-              e.innerText = generate(len, 97, 122);
-            }, i * 10);
-          }
-
-          setTimeout(() => {
-            e.innerText = initial;
-          }, 100);
-
-        });
-
-      });
     </script>
   </body>
 </html>
