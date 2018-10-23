@@ -18,6 +18,38 @@
         font-variant: small-caps !important;
         font-family: 'Play', sans-serif;
       }
+      #open-menu, #close-menu {
+        background: #000;
+        color: #0f0;
+        border: 0;
+        font-size: 18pt;
+        font-family: monospace;
+        width: 40px;
+        position: fixed;
+        top: -2;
+        left: 0;
+        cursor: pointer;
+      }
+      #menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        background: #000;
+        color: #fff;
+        width: 100%;
+        height: 100vh
+      }
+      #menu > #container {
+        width: 75%;
+        height: 100vh;
+        overflow: scroll;
+        margin: 0 auto;
+        /* border: 1px solid #fff; */
+        font-size: 14pt;
+        padding: 25px;
+      }
       .container-fluid {
         background: rgba(0,0,0,0.7);
         position: absolute;
@@ -33,6 +65,27 @@
     </style>
   </head>
   <body>
+    <button id="open-menu">
+      <i class="fa fa-bars"></i>
+    </button>
+    <div id="menu">
+      <button id="close-menu">
+        <i class="fa fa-times"></i>
+      </button>
+      <div id="container">
+        <h4>Work</h4>
+        <p>Software/qa engineer</p>
+        <hr/>
+        <h4>Programming</h4>
+        <p>Python, Javascript, jQuery, React, Redux, NodeJS, Mongo, SQL</p>
+        <hr/>
+        <h4>Hobbies</h4>
+        <p>Mountain biking, hiking, traveling, woodworking, tinkering, welding, and sometimes programming, teaching programming</p>
+        <hr/>
+        <h4>Anything else?</h4>
+        <p>Always looking for investment opportunities, tech or non tech related</p>
+      </div>
+    </div>
     <div class="container-fluid">
       <div class="row justify-content-md-center mt-4 mb-4">
         <div class="col col-lg-6 text-center">
@@ -46,11 +99,19 @@
         </div>
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-      const getRandomCharacter = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+      $('#open-menu').on('click', function () {
+        $('#menu').show();
+        $('#close-menu').on('click', function () {
+          $('#menu').hide();
+        });
+      });
+
+      const getRandomCharacter = (min, max) =>
+        Math.floor(Math.random() * (max - min + 1)) + min;
 
       const generate = (limit, min, max) => {
-
         let charactersList = [];
 
         do {
@@ -58,26 +119,24 @@
         } while (--limit);
 
         return charactersList.join('');
-
       };
 
+      setInterval(() => {
 
-      setInterval(function () {
-
-        let initial = document.querySelector('#n').getAttribute('data-initial');
+        let initial = $('#n').attr('data-initial');
         let len = initial.length;
 
         for (let i = 0; i < 100; i++) {
           setTimeout(() => {
             let gen = generate(len, 48, 57);
-            document.querySelector('#n').innerText = gen;
-            document.title = gen;
+            $('#n').text(gen);
+            $('title').text(gen);
           }, i * 10);
         }
 
         setTimeout(() => {
-          document.querySelector('#n').innerText = initial;
-          document.title = initial;
+          $('#n').text(initial);
+          $('title').text(initial);
         }, 1000);
 
       }, 5000);
