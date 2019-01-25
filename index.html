@@ -12,92 +12,69 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Play:400,700">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
     <style>
-      body {
-        background: url('https://source.unsplash.com/1600x900/?nature,mountain') no-repeat 50% 50% fixed;
-        background-size: cover;
+      h1 {
         font-variant: small-caps !important;
         font-family: 'Play', sans-serif;
       }
-      #open-menu, #close-menu {
-        background: #000;
-        color: #0f0;
-        border: 0;
-        font-size: 18pt;
-        font-family: monospace;
-        width: 40px;
-        position: fixed;
-        top: -2;
-        left: 0;
-        cursor: pointer;
+      .bg-img {
+        background: url('https://source.unsplash.com/1600x900/?nature,mountain') no-repeat 50% 50% fixed;
       }
-      #menu {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 9999;
-        background: #000;
-        color: #fff;
-        width: 100%;
-        height: 100vh
-      }
-      #menu > #container {
-        width: 75%;
-        height: 100vh;
+
+      main {
         overflow: scroll;
-        margin: 0 auto;
-        /* border: 1px solid #fff; */
-        font-size: 14pt;
-        padding: 25px;
       }
-      .container-fluid {
-        background: rgba(0,0,0,0.7);
+
+      main, header {
+        height: 100vh;
+      }
+
+      i {
+        margin-left: 5px;
+        font-size: 20px;
+      }
+
+      footer {
         position: absolute;
         bottom: 0;
+        width: 100%;
+        right: 20px;
       }
-      h1 {
-        font-weight: 700 !important;
-        text-transform: initial;
-      }
-      a {
-        padding: 10px;
+
+      @media only screen and (max-width: 768px) {
+        header {
+          height: 25vh;
+        }
+        main {
+          height: 75vh;
+        }
       }
     </style>
   </head>
   <body>
-    <button id="open-menu">
-      <i class="fa fa-bars"></i>
-    </button>
-    <div id="menu">
-      <button id="close-menu">
-        <i class="fa fa-times"></i>
-      </button>
-      <div id="container">
-        <iframe src="https://microlemonchiffoncurrencies.odran037.repl.run/" style="width: 100%; height: 100%; border: 0;"></iframe>
-      </div>
-    </div>
     <div class="container-fluid">
-      <div class="row justify-content-md-center mt-4 mb-4">
-        <div class="col col-lg-6 text-center">
-          <h1 class="display-4 mb-2 text-white">LNRD_PRTS</h1>
-          <p id="n" data-initial="53662736772837">53662736772837</p>
-          <a class="text-white" href="https://github.com/odran037" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-          <a class="text-white" href="https://codepen.io/odran037" target="_blank"><i class="fab fa-codepen fa-2x"></i></a>
-          <a class="text-white" href="https://glitch.com/@odran037" target="_blank"><i class="fas fa-fish fa-2x"></i></a>
-          <a class="text-white" href="https://codesandbox.io/u/odran037/sandboxes" target="_blank"><i class="fas fa-code fa-2x"></i></a>
-          <a class="text-white" href="https://keybase.io/odran037/key.asc" target="_blank"><i class="fab fa-keybase fa-2x"></i></a>
-        </div>
+      <div class="row flex-column-reverse flex-md-row text-right text-white">
+        <main class="col-md-6">
+          <p class="m-4 text-dark"><small id="n" data-initial="53662736772837">53662736772837</small></p>
+          <h1 class="display-4 m-4 pt-4 pb-4 font-weight-bold">LNRD_PRTS</h1>
+          <p class="m-4 lead">I'm a software engineer by trade. I usually work with Javascript and Python.</p>
+          <p class="m-4 lead">
+    Off the clock I hike, mountain bike, make saw dust and metal spatter. I also tutor and mentor aspiring developers.        
+          </p>
+          <footer class="m-4 pt-4 text-right">
+            <a class="text-white" href="https://github.com/odran037" target="_blank"><i class="fab fa-github "></i></a>
+            <a class="text-white" href="https://codepen.io/odran037" target="_blank"><i class="fab fa-codepen"></i></a>
+            <a class="text-white" href="https://glitch.com/@odran037" target="_blank"><i class="fas fa-fish"></i></a>
+            <a class="text-white" href="https://codesandbox.io/u/odran037/sandboxes" target="_blank"><i class="fas fa-code"></i></a>
+            <a class="text-white" href="https://keybase.io/odran037/key.asc" target="_blank"><i class="fab fa-keybase"></i></a>
+          </footer>
+        </main>
+        <header class="col-md-6 bg-img">
+          &nbsp;
+        </header>
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-      $('#open-menu').on('click', function () {
-        $('#menu').show();
-        $('#close-menu').on('click', function () {
-          $('#menu').hide();
-        });
-      });
-
       const getRandomCharacter = (min, max) =>
         Math.floor(Math.random() * (max - min + 1)) + min;
 
