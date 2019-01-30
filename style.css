@@ -10,7 +10,6 @@ h1 {
 
 main {
   overflow: scroll;
-  position: relative;
 }
 
 main, header {
@@ -27,13 +26,6 @@ i {
   letter-spacing: 2px;
 }
 
-footer {
-  position: absolute;
-  bottom: 20px;
-  width: 100%;
-  right: 20px;
-}
-
 @media only screen and (max-width: 768px) {
   header {
     height: 30vh;
@@ -46,9 +38,5 @@ footer {
 
   main {
     height: 60vh;
-  }
-
-  footer {
-    bottom: 0px;
   }
 }
