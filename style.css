@@ -1,0 +1,54 @@
+h1 {
+  font-variant: small-caps !important;
+  font-family: 'Play', sans-serif;
+  padding-top: 75px;
+}
+
+.bg-img {
+  background: url('https://source.unsplash.com/1600x900/?nature,mountain') no-repeat 50% 50% fixed;
+}
+
+main {
+  overflow: scroll;
+  position: relative;
+}
+
+main, header {
+  height: 100vh;
+}
+
+i {
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+.btn-outline-secondary {
+  font-variant: small-caps;
+  letter-spacing: 2px;
+}
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  right: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    height: 30vh;
+  }
+
+  h1 {
+    line-height: 57px !important;
+    padding-top: 0px;
+  }
+
+  main {
+    height: 60vh;
+  }
+
+  footer {
+    bottom: 0px;
+  }
+}
