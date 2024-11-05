@@ -12,6 +12,10 @@ h1 {
   background-size: cover;
 }
 
+.trade {
+  background-image: url('manager.gif') !important;
+}
+
 main {
   overflow: scroll;
 }
