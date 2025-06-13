@@ -32,11 +32,11 @@ header, #n {
 }
 
 aside {
-  background-image: url('akira.jpg');
+  background-image: url('icon.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: bottom;
-  background-position-x: right;
+  background-position-y: center;
+  background-position-x: center;
 }
 
 h1 {
