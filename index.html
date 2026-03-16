@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leonardo Prates – Platform & Productivity Engineering</title>
+  <style>
+    :root {
+      --bg: #f7f7f7;
+      --bg-alt: #ffffff;
+      --text: #222222;
+      --muted: #555555;
+      --accent: #0077cc;
+      --chip-bg: #e5e5e5;
+      --border: #dddddd;
+      --header-bg: #111111;
+    }
+
+    [data-theme="dark"] {
+      --bg: #050608;
+      --bg-alt: #101218;
+      --text: #f5f5f7;
+      --muted: #a0a4b3;
+      --accent: #4ea3ff;
+      --chip-bg: #1f2230;
+      --border: #2b3040;
+      --header-bg: #050608;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: monospace;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--header-bg);
+      color: var(--text);
+      padding: 60px 20px 40px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+      position: relative;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #f5f5f7;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      color: var(--muted);
+    }
+
+    .top-bar {
+      max-width: 900px;
+      margin: 0 auto 10px;
+      padding: 0 20px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .theme-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--bg-alt);
+      color: var(--muted);
+      font-size: 0.85rem;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .theme-toggle span.icon {
+      font-size: 1rem;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background: transparent;
+    }
+
+    h2 {
+      margin-top: 40px;
+      font-size: 1.6rem;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 6px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .tag {
+      background: var(--chip-bg);
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      border-top: 1px solid var(--border);
+      background: var(--bg-alt);
+      margin-top: 40px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    #n {
+      position: absolute;
+      top: 0;
+      left: 10px;
+      color: #333;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <p id="n" data-initial="53662736772837">53662736772837</p>
+    <div class="top-bar">
+      <div class="theme-toggle" id="themeToggle">
+        <span class="icon" id="themeIcon">🌙</span>
+        <!--         <span id="themeLabel">Dark mode</span> -->
+      </div>
+    </div>
+    <h1>Leonardo Prates</h1>
+    <p>Platform Engineering • DevOps • Developer Productivity • SRE • CI/CD • Automation</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I’m a systems‑minded engineer focused on automation, developer experience, and operational
+      excellence. My work centers on reducing friction, improving reliability, and enabling teams to
+      ship high‑quality software with confidence. I specialize in CI/CD, test automation, platform
+      tooling, and building the infrastructure that makes engineering teams faster and more effective.
+    </p>
+  </section>
+
+  <section>
+    <h2>What I Do</h2>
+    <ul>
+      <li>Design and maintain CI/CD pipelines that enforce quality, accelerate delivery, and reduce operational risk.</li>
+      <li>Build automation and tooling that improves developer productivity and reduces manual effort.</li>
+      <li>Implement scalable test execution systems, including parallelization and environment orchestration.</li>
+      <li>Establish governance, workflows, and operational standards across engineering teams.</li>
+      <li>Automate deployments, environment management, and release processes.</li>
+      <li>Improve system reliability through observability, consistency, and repeatability.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Selected Impact</h2>
+    <ul>
+      <li>Conducted a full GitLab repository audit and reconciled production code in Heroku, restoring Git as the authoritative source of truth.</li>
+      <li>Implemented GitLab CI/CD pipelines enforcing code review, quality gates, and controlled deployments.</li>
+      <li>Reduced regression test runtime from <strong>10 hours to 30 minutes</strong> through parallel test execution.</li>
+      <li>Automated multi‑environment deployments using Node.js, enabling one‑click releases.</li>
+      <li>Eliminated operational bottlenecks by enabling test execution independent of QA availability.</li>
+      <li>Implemented Slack bot notifications for deployments, improving release transparency.</li>
+      <li>Established repository governance: protected branches, merge requirements, and documented workflows.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Roles I Target</h2>
+    <div class="tag-list">
+      <span class="tag">Platform Engineer</span>
+      <span class="tag">DevOps Engineer</span>
+      <span class="tag">Developer Productivity Engineer</span>
+      <span class="tag">Infrastructure Engineer</span>
+      <span class="tag">Site Reliability Engineer</span>
+      <span class="tag">Engineering Productivity</span>
+      <span class="tag">Developer Experience</span>
+      <span class="tag">Build & Release Engineer</span>
+      <span class="tag">CI/CD Engineer</span>
+      <span class="tag">Staff Engineer</span>
+      <span class="tag">Technical Consultant</span>
+      <span class="tag">DevOps Consultant</span>
+      <span class="tag">Engineering Operations</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>
+      <a href="https://forms.gle/rgAf8mJi1FNLzjNn8" target="_blank">Email</a> • <a href="https://www.linkedin.com/in/odran037" target="_blank">LinkedIn</a>
+    </p>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Leonardo Prates — Engineering Productivity & Platform Systems
+  </footer>
+
+  <script>
+    const root = document.documentElement;
+    const toggle = document.getElementById("themeToggle");
+    const icon = document.getElementById("themeIcon");
+    // const label = document.getElementById("themeLabel");
+    const storedTheme = window.localStorage.getItem("theme");
+    if (storedTheme === "dark" || (!storedTheme && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+      root.setAttribute("data-theme", "dark");
+      icon.textContent = "☀️";
+      // label.textContent = "Light mode";
+    }
+    toggle.addEventListener("click", () => {
+      const current = root.getAttribute("data-theme") || "light";
+      const next = current === "light" ? "dark" : "light";
+      root.setAttribute("data-theme", next);
+      window.localStorage.setItem("theme", next);
+      if (next === "dark") {
+        icon.textContent = "☀️";
+        // label.textContent = "Light mode";
+      } else {
+        icon.textContent = "🌙";
+        // label.textContent = "Dark mode";
+      }
+    });
+    document.getElementById("year").textContent = new Date().getFullYear();
+    
+    // 536...
+    /* * */const n = document.getElementById('n');
+    /* * */const getRandomCharacter = (min, max) =>
+    /* * */  Math.floor(Math.random() * (max - min + 1)) + min;
+    /* * */const generate = (limit, min, max) => {
+    /* * */  let charactersList = [];
+    /* * */  do {
+    /* * */    charactersList.push(String.fromCharCode(getRandomCharacter(min, max)));
+    /* * */  } while (--limit);
+    /* * */  return charactersList.join('');
+    /* * */};
+    /* * */setInterval(() => {
+    /* * */  let initial = n.getAttribute('data-initial');
+    /* * */  let len = initial.length;
+    /* * */  for (let i = 0; i < 100; i++) {
+    /* * */    setTimeout(() => {
+    /* * */      let gen = generate(len, 48, 57);
+    /* * */      n.innerText = gen;
+    /* * */      document.title = gen;
+    /* * */    }, i * 10);
+    /* * */  }
+    /* * */  setTimeout(() => {
+    /* * */    n.innerText = initial;
+    /* * */    document.title = initial;
+    /* * */  }, 1000);
+    /* * */}, 5000);
+  </script>
+</body>
+
+</html>
