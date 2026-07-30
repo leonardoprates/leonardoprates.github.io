@@ -943,30 +943,10 @@
       
         setTimeout(() => {
           n.innerText = initial;
+          nFooter.innerText = initial;
           document.title = initial;
         }, 1000);
       }, 5000);
-  
-      // const brandCode = document.getElementById("brand-code");
-      // const originalCode = brandCode.dataset.value;
-  
-      // function scrambleCode() {
-      //   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-      //   let frame = 0;
-      //   const interval = window.setInterval(() => {
-      //     brandCode.textContent = originalCode
-      //       .split("")
-      //       .map((digit, index) => index < frame ? digit : Math.floor(Math.random() * 10))
-      //       .join("");
-      //     frame += 1;
-      //     if (frame > originalCode.length) {
-      //       window.clearInterval(interval);
-      //       brandCode.textContent = originalCode;
-      //     }
-      //   }, 45);
-      // }
-  
-      // window.setTimeout(scrambleCode, 550);
     </script>
   </body>
 </html>
