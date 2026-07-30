@@ -1,425 +1,972 @@
+
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Leonardo Prates – Platform & Productivity Engineering</title>
-  <!-- <title>Leonardo Prates - Cross-functional technologist & engineer</title> -->
-  <style>
-    :root {
-      --bg: #f7f7f7;
-      --bg-alt: #ffffff;
-      --text: #222222;
-      --muted: #555555;
-      /* --accent: #0077cc; */
-      --accent: #ac9026;
-      --chip-bg: #e5e5e5;
-      /* --border: #dddddd; */
-      --border: #2b3040;
-      --header-bg: #111111;
-    }
-
-    [data-theme="dark"] {
-      --bg: #050608;
-      --bg-alt: #101218;
-      --text: #f5f5f7;
-      --muted: #a0a4b3;
-      /* --accent: #4ea3ff; */
-      --accent: #ffda4e;
-      --chip-bg: #1f2230;
-      --border: #2b3040;
-      --header-bg: #050608;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: monospace;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    header {
-      background: var(--header-bg);
-      color: var(--text);
-      padding: 60px 20px 40px;
-      text-align: center;
-      border-bottom: 1px solid var(--border);
-      position: relative;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.4rem;
-      font-weight: 700;
-      color: #f5f5f7;
-    }
-
-    header p {
-      margin-top: 10px;
-      font-size: 1.1rem;
-      color: var(--muted);
-    }
-
-    .top-bar {
-      max-width: 900px;
-      margin: 0 auto 10px;
-      padding: 0 20px;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-    }
-
-    .theme-toggle {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 6px 10px;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      /* background: var(--bg-alt); */
-      background: #101218;
-      color: var(--muted);
-      font-size: 0.85rem;
-      cursor: pointer;
-      user-select: none;
-    }
-
-    .theme-toggle span.icon {
-      font-size: 1rem;
-    }
-
-    section {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-      background: transparent;
-    }
-
-    h2 {
-      margin-top: 40px;
-      font-size: 1.6rem;
-      border-bottom: 2px solid var(--border);
-      padding-bottom: 6px;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    li {
-      margin-bottom: 6px;
-    }
-
-    .tag-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 15px;
-    }
-
-    .tag {
-      background: var(--chip-bg);
-      padding: 6px 12px;
-      border-radius: 20px;
-      font-size: 0.9rem;
-      color: var(--text);
-      border: 1px solid var(--border);
-    }
-
-    footer {
-      text-align: center;
-      padding: 40px 20px;
-      color: var(--muted);
-      font-size: 0.9rem;
-      border-top: 1px solid var(--border);
-      background: var(--bg-alt);
-      margin-top: 40px;
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    #n {
-      /* position: absolute;
-      top: 0;
-      left: 10px; */
-      color: #333;
-    }
-  </style>
-</head>
-
-<body>
-  <header>
-    <!-- <p id="n" data-initial="53662736772837">53662736772837</p> -->
-    <div class="top-bar">
-      <div class="theme-toggle" id="themeToggle">
-        <span class="icon" id="themeIcon">🌙</span>
-        <!--         <span id="themeLabel">Dark mode</span> -->
-      </div>
-    </div>
-    <p id="n" data-initial="53662736772837">53662736772837</p>
-    <h1>Leonardo Prates</h1>
-    <p>SDET • QA Automation Engineer • Test Automation • CI/CD • API Testing</p>
-    <!-- <p>Platform Engineering • DevOps • Developer Productivity • SRE • CI/CD • Automation</p> -->
-    <!-- <p>I’m a cross-functional technologist who improves workflows, documentation, quality, and AI-assisted systems</p> -->
-  </header>
-
-  <section>
-    <h2>About Me</h2>
-    <p>
-      Senior SDET / Quality Engineer focused on automation architecture, release reliability, and engineering workflow improvement.
-    </p>
-    <p>
-      I build testing systems, CI/CD workflows, and operational tooling that help teams ship software more confidently, reliably, and sustainably.
-    </p>
-    <!-- <p>
-      I’m a systems-minded technologist focused on improving workflows, documentation quality, and operational reliability across distributed teams. Over the past nine years, I’ve worked at the intersection of automation, quality, AI-assisted systems, and process design — helping organizations reduce friction, improve clarity, and deliver more consistent outcomes.
-      
-      I enjoy analyzing how systems break down, mapping the underlying processes, and creating clear, repeatable solutions that make teams more effective. My work spans technical documentation, workflow optimization, automated testing, AI-assisted content generation, and cross-functional collaboration.
-    </p> -->
-  </section>
-
-  <section>
-    <h2>What I do</h2>
-    <p>
-      Design and maintain CI/CD pipelines that improve release reliability and reduce operational risk.
-    </p>
-    <p>
-      Build automation systems and internal tooling that improve developer productivity and reduce manual effort.
-    </p>
-    <p>
-      Implement scalable test execution systems, including parallelized regression workflows and environment orchestration.
-    </p>
-    <p>
-      Establish practical engineering workflows for source control, deployments, testing, and release management.
-    </p>
-    <p>
-      Automate deployments, release processes, and operational workflows to improve consistency and visibility.
-    </p>
-    <p>
-      Improve engineering reliability through repeatable systems, clear workflows, and sustainable operational practices.
-    </p>
-    <!-- <ul> -->
-      <!-- <li>Design and maintain CI/CD pipelines that enforce quality, accelerate delivery, and reduce operational risk.</li>
-      <li>Build automation and tooling that improves developer productivity and reduces manual effort.</li>
-      <li>Implement scalable test execution systems, including parallelization and environment orchestration.</li>
-      <li>Establish governance, workflows, and operational standards across engineering teams.</li>
-      <li>Automate deployments, environment management, and release processes.</li>
-      <li>Improve system reliability through observability, consistency, and repeatability.</li> -->
-      <!-- <li>Improve workflows and operational processes to reduce friction and increase reliability</li>
-      <li>Develop clear, structured documentation that supports engineering and non-engineering teams</li>
-      <li>Design AI-assisted features and content systems that enhance productivity</li>
-      <li>Validate data workflows, APIs, and system behavior to ensure quality and consistency</li>
-      <li>Support cross-functional teams through structured triage, root cause analysis, and process mapping</li>
-      <li>Build automation and tooling that reduces manual effort and improves repeatability</li> -->
-    <!-- </ul> -->
-  </section>
-
-  <section>
-    <h2>How I work</h2>
-    <p>
-      I’m most energized by improving reliability, reducing operational friction, and building systems that make engineering calmer and more sustainable.
-    </p>
-    <p>
-      My work tends to focus on automation architecture, release reliability, CI/CD and deployment workflows, frontend testing ecosystems, practical process improvement, and developer workflow enablement.
-    </p>
-    <p>
-      I value engineering cultures that prioritize clear communication, meaningful collaboration, operational maturity, and practical engineering over performative process or unnecessary complexity.
-    </p>
-  </section>
-
-  <section>
-    <h2>What I look for</h2>
-    <p>
-      I’m interested in Senior SDET / Quality Engineering opportunities where I can contribute to automation systems, release reliability, and engineering workflow improvement within collaborative and operationally mature teams.
-    </p>
-    <p>  
-      I work best in environments that value practical engineering, clear communication, sustainable processes, thoughtful collaboration, and a healthy balance between reliability and delivery speed.
-    </p>
-  </section>
-
-  <section>
-    <h2>Selected Impact</h2>
-    <ul>
-      <li>Conducted a full GitLab repository audit and reconciled production code in Heroku, restoring Git as the authoritative source of truth.</li>
-      <li>Implemented GitLab CI/CD pipelines enforcing code review, quality gates, and controlled deployments.</li>
-      <li>Reduced regression test runtime from <strong>10 hours to 30 minutes</strong> through parallel test execution.</li>
-      <li>Automated multi‑environment deployments using Node.js, enabling one‑click releases.</li>
-      <li>Eliminated operational bottlenecks by enabling test execution independent of QA availability.</li>
-      <li>Implemented Slack bot notifications for deployments, improving release transparency.</li>
-      <li>Established repository governance: protected branches, merge requirements, and documented workflows.</li>
-      <!-- <li>Designed and implemented an AI-assisted email generation feature and automated translation workflows</li>
-      <li>Established documentation standards and workflow governance across engineering teams</li>
-      <li>Improved regression cycles through parallelization and automation, reducing runtime from over 10 hours to 30 minutes</li>
-      <li>Conducted a full repository audit and restored Git as the authoritative source of truth</li>
-      <li>Improved release reliability through structured triage, root cause analysis, and CI/CD workflow improvements</li>
-      <li>Rebuilt front-end workflows using modern tooling to support consistency and reduce defects</li> -->
-    </ul>
-  </section>
-
-  <section>
-    <!-- <h2>Roles I Target</h2> -->
-    <h2>Skills</h2>
-    
-    <h3>Automation Systems</h3>
-    <div class="tag-list">
-      <span class="tag">End-to-End Test Frameworks</span>
-      <span class="tag">Playwright / Cypress / Selenium</span>
-      <span class="tag">pytest / RSpec / Capybara</span>
-      <span class="tag">Regression Optimization</span>
-      <span class="tag">Parallel Execution</span>
-      <span class="tag">Test Infrastructure Design</span>
-    </div>
-    
-    <h3>API & Distributed Systems</h3>
-    <div class="tag-list">
-      <span class="tag">REST API Testing</span>
-      <span class="tag">Integration Testing</span>
-      <span class="tag">Backend Validation</span>
-      <span class="tag">Data Workflows</span>
-    </div>
-    
-    <h3>CI/CD & Delivery</h3>
-    <div class="tag-list">
-      <span class="tag">GitLab CI/CD</span>
-      <span class="tag">Pipeline Design</span>
-      <span class="tag">Continuous Integration</span>
-      <span class="tag">Continuous Deployment</span>
-      <span class="tag">Release Automation</span>
-    </div>
-    
-    <h3>Languages & Tooling</h3>
-    <div class="tag-list">
-      <span class="tag">Python</span>
-      <span class="tag">JavaScript</span>
-      <span class="tag">Ruby</span>
-      <span class="tag">Node.js</span>
-    </div>
-    
-    <h3>Engineering Practices</h3>
-    <div class="tag-list">
-      <span class="tag">Test Strategy</span>
-      <span class="tag">Quality Engineering</span>
-      <span class="tag">Defect Triage</span>
-      <span class="tag">Root Cause Analysis</span>
-      <span class="tag">Agile / SDLC</span>
-    </div>
-    
-    <h3>Emerging & Applied</h3>
-    <div class="tag-list">
-      <span class="tag">AI-Assisted Automation</span>
-      <span class="tag">Prompt-Based Systems</span>
-      <span class="tag">Workflow Automation</span>
-    </div>
-    <!-- <div class="tag-list"> -->
-      <!-- <span class="tag">Platform Engineer</span>
-      <span class="tag">DevOps Engineer</span>
-      <span class="tag">Developer Productivity Engineer</span>
-      <span class="tag">Infrastructure Engineer</span>
-      <span class="tag">Site Reliability Engineer</span>
-      <span class="tag">Engineering Productivity</span>
-      <span class="tag">Developer Experience</span>
-      <span class="tag">Build & Release Engineer</span>
-      <span class="tag">CI/CD Engineer</span>
-      <span class="tag">Staff Engineer</span>
-      <span class="tag">Technical Consultant</span>
-      <span class="tag">DevOps Consultant</span>
-      <span class="tag">Engineering Operations</span> -->
-      <!-- <span class="tag">Technical Writer</span>
-      <span class="tag">Documentation Specialist</span>
-      <span class="tag">Business Process Analyst</span>
-      <span class="tag">Workflow Optimization Specialist</span>
-      <span class="tag">AI Prompt Engineer</span>
-      <span class="tag">AI QA Analyst</span>
-      <span class="tag">Technical Support Specialist (Tier 2/3)</span>
-      <span class="tag">Quality Analyst (Software & Non-Software)</span>
-      <span class="tag">Product Operations</span>
-      <span class="tag">Project Coordinator</span>
-      <span class="tag">Technical Operations</span> -->
-    <!-- </div> -->
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <p>
-      <a href="https://forms.gle/rgAf8mJi1FNLzjNn8" target="_blank">Email</a> • <a href="https://www.linkedin.com/in/odran037" target="_blank">LinkedIn</a>
-    </p>
-  </section>
-
-  <footer>
-    © <span id="year"></span> Leonardo Prates — Automation, Reliability & Engineering Workflows
-    <!-- © <span id="year"></span> Leonardo Prates — Cross-functional technologist & engineer -->
-  </footer>
-
-  <script>
-    const root = document.documentElement;
-    const toggle = document.getElementById("themeToggle");
-    const icon = document.getElementById("themeIcon");
-    // const label = document.getElementById("themeLabel");
-    const storedTheme = window.localStorage.getItem("theme");
-    if (storedTheme === "dark" || (!storedTheme && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
-      root.setAttribute("data-theme", "dark");
-      icon.textContent = "☀️";
-      // label.textContent = "Light mode";
-    }
-    toggle.addEventListener("click", () => {
-      const current = root.getAttribute("data-theme") || "light";
-      const next = current === "light" ? "dark" : "light";
-      root.setAttribute("data-theme", next);
-      window.localStorage.setItem("theme", next);
-      if (next === "dark") {
-        icon.textContent = "☀️";
-        // label.textContent = "Light mode";
-      } else {
-        icon.textContent = "🌙";
-        // label.textContent = "Dark mode";
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Leonardo Prates is a senior full-stack software engineer with deep frontend experience in React and TypeScript, plus backend, AI, automation, testing, and delivery systems expertise.">
+    <meta name="color-scheme" content="dark light">
+    <meta property="og:title" content="Leonardo Prates — Senior Full-Stack Software Engineer">
+    <meta property="og:description" content="Product engineering, React and TypeScript, backend systems, AI workflows, automation, quality, and delivery.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://leonardoprates.github.io/">
+    <title>Leonardo Prates — Senior Full-Stack Software Engineer</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+      :root {
+        --bg: #f4f1ea;
+        --surface: #fffdf8;
+        --surface-strong: #ffffff;
+        --text: #171914;
+        --muted: #62665c;
+        --line: #d8d4c9;
+        --accent: #5a5f16;
+        --accent-strong: #343800;
+        --accent-soft: #e8e9c4;
+        --code-bg: #e9e5dc;
+        --shadow: 0 18px 50px rgba(33, 35, 25, 0.08);
+        --hero-glow: rgba(126, 134, 37, 0.18);
+        --header-bg: rgba(244, 241, 234, 0.88);
+        --max-width: 1120px;
       }
-    });
-    document.getElementById("year").textContent = new Date().getFullYear();
-    
-    // 536...
-    /* * */const n = document.getElementById('n');
-    /* * */const getRandomCharacter = (min, max) =>
-    /* * */  Math.floor(Math.random() * (max - min + 1)) + min;
-    /* * */const generate = (limit, min, max) => {
-    /* * */  let charactersList = [];
-    /* * */  do {
-    /* * */    charactersList.push(String.fromCharCode(getRandomCharacter(min, max)));
-    /* * */  } while (--limit);
-    /* * */  return charactersList.join('');
-    /* * */};
-    /* * */setInterval(() => {
-    /* * */  let initial = n.getAttribute('data-initial');
-    /* * */  let len = initial.length;
-    /* * */  for (let i = 0; i < 100; i++) {
-    /* * */    setTimeout(() => {
-    /* * */      let gen = generate(len, 48, 57);
-    /* * */      n.innerText = gen;
-    /* * */      document.title = gen;
-    /* * */    }, i * 10);
-    /* * */  }
-    /* * */  setTimeout(() => {
-    /* * */    n.innerText = initial;
-    /* * */    document.title = initial;
-    /* * */  }, 1000);
-    /* * */}, 5000);
+  
+      [data-theme="dark"] {
+        --bg: #090b0d;
+        --surface: #101317;
+        --surface-strong: #15191e;
+        --text: #f4f5ef;
+        --muted: #a7ada1;
+        --line: #293039;
+        --accent: #d4df58;
+        --accent-strong: #f0f68c;
+        --accent-soft: #252b13;
+        --code-bg: #171c21;
+        --shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
+        --hero-glow: rgba(212, 223, 88, 0.13);
+        --header-bg: rgba(9, 11, 13, 0.88);
+      }
+  
+      * {
+        box-sizing: border-box;
+      }
+  
+      html {
+        scroll-behavior: smooth;
+      }
+  
+      body {
+        margin: 0;
+        background:
+          radial-gradient(circle at 76% 7%, var(--hero-glow), transparent 30rem),
+          var(--bg);
+        color: var(--text);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.65;
+        text-rendering: optimizeLegibility;
+      }
+  
+      a {
+        color: inherit;
+      }
+  
+      a:focus-visible,
+      button:focus-visible {
+        outline: 3px solid var(--accent);
+        outline-offset: 4px;
+      }
+  
+      .skip-link {
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        z-index: 100;
+        transform: translateY(-160%);
+        padding: 0.7rem 1rem;
+        border-radius: 0.55rem;
+        background: var(--accent-strong);
+        color: var(--bg);
+        font-weight: 800;
+        transition: transform 160ms ease;
+      }
+  
+      .skip-link:focus {
+        transform: translateY(0);
+      }
+  
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        border-bottom: 1px solid var(--line);
+        background: var(--header-bg);
+        backdrop-filter: blur(16px);
+      }
+  
+      .nav-wrap {
+        width: min(var(--max-width), calc(100% - 2rem));
+        min-height: 4.5rem;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+  
+      .brand {
+        display: inline-flex;
+        align-items: baseline;
+        gap: 0.65rem;
+        color: var(--text);
+        text-decoration: none;
+        font-weight: 850;
+        letter-spacing: -0.03em;
+      }
+  
+      .brand-code,
+      .eyebrow,
+      .section-kicker,
+      .role-tech,
+      .impact-number,
+      .footer-code {
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+      }
+  
+      .brand-code {
+        color: var(--accent);
+        font-size: 0.72rem;
+        letter-spacing: 0.04em;
+      }
+  
+      .nav-actions {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+  
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 1.15rem;
+      }
+  
+      .nav-links a {
+        color: var(--muted);
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: 700;
+      }
+  
+      .nav-links a:hover {
+        color: var(--text);
+      }
+  
+      .theme-toggle {
+        width: 2.65rem;
+        height: 2.65rem;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: var(--surface);
+        color: var(--text);
+        cursor: pointer;
+        font-size: 1rem;
+        box-shadow: var(--shadow);
+      }
+  
+      main {
+        overflow: hidden;
+      }
+  
+      .shell {
+        width: min(var(--max-width), calc(100% - 2rem));
+        margin: 0 auto;
+      }
+  
+      .hero {
+        min-height: calc(100vh - 4.5rem);
+        display: grid;
+        grid-template-columns: minmax(0, 1.45fr) minmax(17rem, 0.65fr);
+        align-items: center;
+        gap: clamp(2rem, 6vw, 6rem);
+        padding: clamp(4.5rem, 10vw, 8.5rem) 0;
+      }
+  
+      .eyebrow,
+      .section-kicker {
+        margin: 0 0 1rem;
+        color: var(--accent);
+        font-size: 0.8rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+  
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+  
+      h1 {
+        max-width: 850px;
+        margin-bottom: 1.35rem;
+        font-size: clamp(3.15rem, 8vw, 6.8rem);
+        line-height: 0.96;
+        letter-spacing: -0.075em;
+      }
+  
+      h1 span {
+        color: var(--accent);
+      }
+  
+      .hero-lede {
+        max-width: 760px;
+        margin-bottom: 2rem;
+        color: var(--muted);
+        font-size: clamp(1.08rem, 2vw, 1.35rem);
+      }
+  
+      .hero-lede strong {
+        color: var(--text);
+      }
+  
+      .button-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.85rem;
+      }
+  
+      .button {
+        display: inline-flex;
+        min-height: 3rem;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1rem;
+        border: 1px solid var(--line);
+        border-radius: 0.7rem;
+        background: var(--surface);
+        color: var(--text);
+        text-decoration: none;
+        font-weight: 800;
+        box-shadow: var(--shadow);
+        transition: transform 160ms ease, border-color 160ms ease;
+      }
+  
+      .button:hover {
+        transform: translateY(-2px);
+        border-color: var(--accent);
+      }
+  
+      .button.primary {
+        border-color: var(--accent);
+        background: var(--accent);
+        color: #0b0d05;
+      }
+  
+      .hero-panel {
+        position: relative;
+        padding: 1.35rem;
+        border: 1px solid var(--line);
+        border-radius: 1.1rem;
+        background: linear-gradient(145deg, var(--surface-strong), var(--surface));
+        box-shadow: var(--shadow);
+      }
+  
+      .hero-panel::before {
+        content: "";
+        position: absolute;
+        inset: -1px;
+        z-index: -1;
+        border-radius: inherit;
+        background: linear-gradient(145deg, var(--accent), transparent 45%);
+        opacity: 0.5;
+      }
+  
+      .panel-label {
+        margin-bottom: 1rem;
+        color: var(--muted);
+        font-family: "SFMono-Regular", Consolas, monospace;
+        font-size: 0.76rem;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+  
+      .focus-list {
+        display: grid;
+        gap: 0.75rem;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+  
+      .focus-list li {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.75rem;
+        padding: 0.8rem;
+        border: 1px solid var(--line);
+        border-radius: 0.75rem;
+        background: var(--code-bg);
+        font-weight: 750;
+      }
+  
+      .focus-list li::before {
+        content: ">";
+        color: var(--accent);
+        font-family: "SFMono-Regular", Consolas, monospace;
+        font-weight: 900;
+      }
+  
+      .section {
+        padding: clamp(4rem, 8vw, 7rem) 0;
+        border-top: 1px solid var(--line);
+      }
+  
+      .section-heading {
+        display: grid;
+        grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
+        gap: 2rem;
+        align-items: start;
+        margin-bottom: 2.25rem;
+      }
+  
+      .section-heading h2 {
+        margin-bottom: 0;
+        font-size: clamp(2.1rem, 5vw, 3.7rem);
+        line-height: 1.02;
+        letter-spacing: -0.055em;
+      }
+  
+      .section-heading > p {
+        max-width: 680px;
+        margin: 0;
+        color: var(--muted);
+        font-size: 1.05rem;
+      }
+  
+      .capability-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+      }
+  
+      .card {
+        min-height: 17rem;
+        padding: clamp(1.35rem, 3vw, 2rem);
+        border: 1px solid var(--line);
+        border-radius: 1rem;
+        background: var(--surface);
+        box-shadow: var(--shadow);
+      }
+  
+      .card-index {
+        display: inline-flex;
+        margin-bottom: 2.75rem;
+        color: var(--accent);
+        font-family: "SFMono-Regular", Consolas, monospace;
+        font-size: 0.78rem;
+        font-weight: 800;
+      }
+  
+      .card h3 {
+        margin-bottom: 0.75rem;
+        font-size: 1.45rem;
+        letter-spacing: -0.03em;
+      }
+  
+      .card p {
+        margin-bottom: 1rem;
+        color: var(--muted);
+      }
+  
+      .inline-tags,
+      .tech-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        padding: 0;
+        list-style: none;
+      }
+  
+      .inline-tags li,
+      .tech-list li {
+        padding: 0.34rem 0.58rem;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: var(--code-bg);
+        color: var(--text);
+        font-family: "SFMono-Regular", Consolas, monospace;
+        font-size: 0.74rem;
+      }
+  
+      .timeline {
+        display: grid;
+        gap: 0;
+        border-top: 1px solid var(--line);
+      }
+  
+      .role {
+        display: grid;
+        grid-template-columns: minmax(12rem, 0.55fr) minmax(0, 1.45fr);
+        gap: 2rem;
+        padding: 2rem 0;
+        border-bottom: 1px solid var(--line);
+      }
+  
+      .role-company {
+        margin-bottom: 0.25rem;
+        font-size: 1.15rem;
+        font-weight: 850;
+      }
+  
+      .role-title {
+        margin-bottom: 0.55rem;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+  
+      .role-tech {
+        color: var(--accent);
+        font-size: 0.76rem;
+        line-height: 1.5;
+      }
+  
+      .role-copy {
+        margin: 0;
+        color: var(--muted);
+      }
+  
+      .role-copy strong {
+        color: var(--text);
+      }
+  
+      .impact-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+      }
+  
+      .impact-card {
+        padding: 1.5rem;
+        border: 1px solid var(--line);
+        border-radius: 1rem;
+        background: var(--surface);
+      }
+  
+      .impact-number {
+        display: block;
+        margin-bottom: 0.7rem;
+        color: var(--accent);
+        font-size: clamp(2.1rem, 5vw, 3.5rem);
+        font-weight: 900;
+        letter-spacing: -0.07em;
+        line-height: 1;
+      }
+  
+      .impact-card p {
+        margin-bottom: 0;
+        color: var(--muted);
+      }
+  
+      .stack-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+      }
+  
+      .stack-group {
+        padding: 1.35rem;
+        border: 1px solid var(--line);
+        border-radius: 0.9rem;
+        background: var(--surface);
+      }
+  
+      .stack-group h3 {
+        margin-bottom: 0.8rem;
+        font-size: 1rem;
+      }
+  
+      .contact-panel {
+        display: grid;
+        grid-template-columns: minmax(0, 1.35fr) minmax(16rem, 0.65fr);
+        gap: 2rem;
+        align-items: end;
+        padding: clamp(2rem, 5vw, 4rem);
+        border: 1px solid var(--line);
+        border-radius: 1.25rem;
+        background: linear-gradient(135deg, var(--surface-strong), var(--surface));
+        box-shadow: var(--shadow);
+      }
+  
+      .contact-panel h2 {
+        margin-bottom: 0.8rem;
+        font-size: clamp(2rem, 5vw, 3.65rem);
+        line-height: 1.02;
+        letter-spacing: -0.055em;
+      }
+  
+      .contact-panel p {
+        margin-bottom: 0;
+        color: var(--muted);
+      }
+  
+      .contact-links {
+        display: grid;
+        gap: 0.7rem;
+      }
+  
+      .contact-links a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.9rem 1rem;
+        border: 1px solid var(--line);
+        border-radius: 0.7rem;
+        background: var(--code-bg);
+        text-decoration: none;
+        font-weight: 800;
+      }
+  
+      .contact-links a:hover {
+        border-color: var(--accent);
+      }
+  
+      footer {
+        padding: 2rem 0 3rem;
+        color: var(--muted);
+        font-size: 0.85rem;
+      }
+  
+      .footer-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        border-top: 1px solid var(--line);
+        padding-top: 1.5rem;
+      }
+  
+      .footer-code {
+        color: var(--accent);
+      }
+  
+      @media (max-width: 850px) {
+        .nav-links {
+          display: none;
+        }
+  
+        .hero,
+        .section-heading,
+        .role,
+        .contact-panel {
+          grid-template-columns: 1fr;
+        }
+  
+        .hero {
+          min-height: auto;
+        }
+  
+        .hero-panel {
+          max-width: 34rem;
+        }
+  
+        .capability-grid,
+        .impact-grid,
+        .stack-grid {
+          grid-template-columns: 1fr;
+        }
+  
+        .card {
+          min-height: auto;
+        }
+  
+        .card-index {
+          margin-bottom: 1.75rem;
+        }
+      }
+  
+      @media (max-width: 520px) {
+        .nav-wrap,
+        .shell {
+          width: min(100% - 1.25rem, var(--max-width));
+        }
+  
+        h1 {
+          font-size: clamp(3rem, 17vw, 4.4rem);
+        }
+  
+        .button-row,
+        .button {
+          width: 100%;
+        }
+  
+        .footer-row {
+          flex-direction: column;
+        }
+      }
+  
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+  
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+  
+    <header class="site-header">
+      <div class="nav-wrap">
+        <a class="brand" href="#top" aria-label="Leonardo Prates, home">
+          Leonardo Prates <span class="brand-code" id="n" data-value="53662736772837">53662736772837</span>
+        </a>
+        <div class="nav-actions">
+          <nav class="nav-links" aria-label="Primary navigation">
+            <a href="#capabilities">Capabilities</a>
+            <a href="#experience">Experience</a>
+            <a href="#impact">Impact</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light theme" title="Change color theme">
+            <span aria-hidden="true" id="themeIcon">☀</span>
+          </button>
+        </div>
+      </div>
+    </header>
+  
+    <main id="main">
+      <div class="shell" id="top">
+        <section class="hero" aria-labelledby="hero-title">
+          <div>
+            <p class="eyebrow">Senior full-stack software engineer</p>
+            <h1 id="hero-title">I build the <span>product</span> and the systems behind it.</h1>
+            <p class="hero-lede">
+              More than a decade of experience across <strong>modern frontend development, backend services, AI-powered workflows, test architecture, automation, and software delivery</strong>. My deepest experience is in React and TypeScript, but my work has always crossed the full stack.
+            </p>
+            <div class="button-row">
+              <a class="button primary" href="#experience">Explore my experience <span aria-hidden="true">↓</span></a>
+              <a class="button" href="https://www.linkedin.com/in/odran037" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+              <a class="button" href="https://github.com/odran037" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+  
+          <aside class="hero-panel" aria-label="Engineering focus">
+            <div class="panel-label">Current operating range</div>
+            <ul class="focus-list">
+              <li>Product & frontend engineering</li>
+              <li>Backend services & integrations</li>
+              <li>AI workflows & internal tooling</li>
+              <li>Quality, CI/CD & delivery systems</li>
+            </ul>
+          </aside>
+        </section>
+      </div>
+  
+      <section class="section" id="capabilities">
+        <div class="shell">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">01 / Capabilities</p>
+              <h2>Broad by practice, not by buzzword.</h2>
+            </div>
+            <p>
+              I have spent most of my career building web products, especially frontend applications with React. Over time, that work expanded naturally into backend systems, testing architecture, deployment automation, AI integrations, and technical leadership.
+            </p>
+          </div>
+  
+          <div class="capability-grid">
+            <article class="card">
+              <span class="card-index">01.1</span>
+              <h3>Product & frontend engineering</h3>
+              <p>Customer-facing web applications, reusable components, stateful interfaces, design collaboration, frontend modernization, and component-driven development.</p>
+              <ul class="inline-tags" aria-label="Frontend technologies">
+                <li>React</li><li>TypeScript</li><li>JavaScript</li><li>Redux</li><li>Svelte</li><li>Storybook</li><li>Vite</li>
+              </ul>
+            </article>
+  
+            <article class="card">
+              <span class="card-index">01.2</span>
+              <h3>Backend systems & integrations</h3>
+              <p>Full-stack feature delivery, APIs, business logic, data workflows, platform integrations, and services that connect product experiences to dependable systems.</p>
+              <ul class="inline-tags" aria-label="Backend technologies">
+                <li>Ruby on Rails</li><li>Meteor</li><li>Node.js</li><li>Python</li><li>Flask</li><li>REST APIs</li><li>PostgreSQL</li>
+              </ul>
+            </article>
+  
+            <article class="card">
+              <span class="card-index">01.3</span>
+              <h3>AI, tooling & workflow automation</h3>
+              <p>LLM integrations, AI-assisted product and engineering workflows, internal tools, business-process automation, documentation systems, and cross-platform orchestration.</p>
+              <ul class="inline-tags" aria-label="AI and automation technologies">
+                <li>OpenAI API</li><li>LLM integrations</li><li>Prompt engineering</li><li>Workflow automation</li><li>GitLab</li><li>Jira</li><li>Slack</li>
+              </ul>
+            </article>
+  
+            <article class="card">
+              <span class="card-index">01.4</span>
+              <h3>Quality, platform & delivery</h3>
+              <p>Test architecture, scalable regression systems, CI/CD pipelines, release workflows, repository governance, debugging, and engineering standards that help teams ship reliably.</p>
+              <ul class="inline-tags" aria-label="Quality and delivery technologies">
+                <li>Playwright</li><li>Cypress</li><li>Selenium</li><li>pytest</li><li>RSpec</li><li>GitLab CI/CD</li><li>Release automation</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+  
+      <section class="section" id="experience">
+        <div class="shell">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">02 / Experience</p>
+              <h2>A career built across the stack.</h2>
+            </div>
+            <p>
+              The common thread is not one framework or job title. It is taking ownership of complex systems, understanding where the friction is, and building practical software that improves the product and the way the team delivers it.
+            </p>
+          </div>
+  
+          <div class="timeline">
+            <article class="role">
+              <div>
+                <div class="role-company">Estimate Rocket</div>
+                <div class="role-title">Senior Software Engineer</div>
+                <div class="role-tech">Svelte · TypeScript · Python · AI/LLMs · Playwright · GitLab CI/CD</div>
+              </div>
+              <p class="role-copy">
+                Modernized the frontend platform with Svelte, Vite, Vitest, and Storybook while also building <strong>AI-powered workflows, engineering integrations, automated testing systems, deployment pipelines, and internal operational tooling</strong>. Expanded into technical leadership, standards, documentation, and mentorship.
+              </p>
+            </article>
+  
+            <article class="role">
+              <div>
+                <div class="role-company">Trainual</div>
+                <div class="role-title">Software Engineer</div>
+                <div class="role-tech">React · TypeScript · Redux · Storybook · Ruby on Rails</div>
+              </div>
+              <p class="role-copy">
+                Delivered customer-facing full-stack product features using a <strong>React and TypeScript frontend with a Ruby on Rails backend</strong>. Worked across interface development, backend implementation, automated testing, debugging, production support, architecture discussions, and close collaboration with product and design.
+              </p>
+            </article>
+  
+            <article class="role">
+              <div>
+                <div class="role-company">Prenda</div>
+                <div class="role-title">Software Engineer</div>
+                <div class="role-tech">React · TypeScript · Meteor</div>
+              </div>
+              <p class="role-copy">
+                Built and maintained full-stack product functionality with a <strong>React and TypeScript frontend backed by Meteor</strong>, contributing across user-facing workflows, application behavior, debugging, and feature delivery.
+              </p>
+            </article>
+  
+            <article class="role">
+              <div>
+                <div class="role-company">SageSure</div>
+                <div class="role-title">Software Development Engineer in Test</div>
+                <div class="role-tech">React · JavaScript · Python · Selenium · API testing · CI/CD</div>
+              </div>
+              <p class="role-copy">
+                Designed Python-based test infrastructure and validation systems for enterprise applications built with React and distributed backend services. In addition to automation ownership, contributed <strong>frontend bug fixes and light React development</strong>, root-cause analysis, and framework design with engineering teams.
+              </p>
+            </article>
+  
+            <article class="role">
+              <div>
+                <div class="role-company">GDT & DevMountain</div>
+                <div class="role-title">Software Engineer · Engineer Mentor</div>
+                <div class="role-tech">React · JavaScript · Python · Flask · Full-stack web development</div>
+              </div>
+              <p class="role-copy">
+                Built proof-of-concept applications, internal platforms, data-processing tools, backend services, and frontend experiences across multiple technology stacks. Later mentored developers in full-stack fundamentals, debugging, code review, and practical software engineering.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+  
+      <section class="section" id="impact">
+        <div class="shell">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">03 / Selected impact</p>
+              <h2>Engineering improvements that compound.</h2>
+            </div>
+            <p>
+              I enjoy product work, but I also notice the systems around the product: slow feedback loops, fragile deployments, repetitive operations, missing visibility, and documentation gaps. Fixing those systems makes every engineer more effective.
+            </p>
+          </div>
+  
+          <div class="impact-grid">
+            <article class="impact-card">
+              <span class="impact-number">20×</span>
+              <p>Reduced a regression suite from more than 10 hours to under 30 minutes through pipeline redesign and parallel execution.</p>
+            </article>
+            <article class="impact-card">
+              <span class="impact-number">1-click</span>
+              <p>Replaced manual deployment practices with repeatable, reviewable, automated release workflows across environments.</p>
+            </article>
+            <article class="impact-card">
+              <span class="impact-number">4 lanes</span>
+              <p>Contribute across product engineering, backend systems, engineering automation, and delivery reliability rather than operating inside one narrow specialty.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+  
+      <section class="section" id="stack">
+        <div class="shell">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">04 / Technology</p>
+              <h2>Tools I have used to solve real problems.</h2>
+            </div>
+            <p>
+              Technologies change. The durable skills are understanding systems, learning quickly, debugging effectively, communicating clearly, and choosing an approach that fits the actual problem.
+            </p>
+          </div>
+  
+          <div class="stack-grid">
+            <article class="stack-group">
+              <h3>Frontend</h3>
+              <ul class="tech-list"><li>React</li><li>TypeScript</li><li>JavaScript</li><li>Redux</li><li>Svelte</li><li>Storybook</li><li>Vite</li><li>Vitest</li><li>HTML</li><li>CSS</li></ul>
+            </article>
+            <article class="stack-group">
+              <h3>Backend & data</h3>
+              <ul class="tech-list"><li>Ruby on Rails</li><li>Meteor</li><li>Node.js</li><li>Python</li><li>Flask</li><li>REST APIs</li><li>PostgreSQL</li><li>Integrations</li></ul>
+            </article>
+            <article class="stack-group">
+              <h3>Quality & delivery</h3>
+              <ul class="tech-list"><li>Playwright</li><li>Cypress</li><li>Selenium</li><li>pytest</li><li>RSpec</li><li>GitLab CI/CD</li><li>Git</li><li>Release management</li></ul>
+            </article>
+            <article class="stack-group">
+              <h3>AI & automation</h3>
+              <ul class="tech-list"><li>OpenAI API</li><li>ChatGPT</li><li>LLM integration</li><li>Prompt engineering</li><li>Workflow automation</li><li>GitHub Copilot</li></ul>
+            </article>
+            <article class="stack-group">
+              <h3>Engineering practice</h3>
+              <ul class="tech-list"><li>System design</li><li>Technical leadership</li><li>Root-cause analysis</li><li>Documentation</li><li>Mentorship</li><li>Cross-functional delivery</li></ul>
+            </article>
+            <article class="stack-group">
+              <h3>How I operate</h3>
+              <ul class="tech-list"><li>Product-minded</li><li>Systems-oriented</li><li>Pragmatic</li><li>Collaborative</li><li>Curious</li><li>Ownership-driven</li></ul>
+            </article>
+          </div>
+        </div>
+      </section>
+  
+      <section class="section" id="contact">
+        <div class="shell">
+          <div class="contact-panel">
+            <div>
+              <p class="section-kicker">05 / Contact</p>
+              <h2>Let’s build something useful.</h2>
+              <p>I’m most interested in senior software engineering work where broad technical range, strong product instincts, and the ability to improve engineering systems are all valuable.</p>
+            </div>
+            <div class="contact-links">
+              <a href="https://forms.gle/rgAf8mJi1FNLzjNn8" target="_blank" rel="noreferrer"><span>Contact me</span><span aria-hidden="true">↗</span></a>
+              <a href="https://www.linkedin.com/in/odran037" target="_blank" rel="noreferrer"><span>LinkedIn</span><span aria-hidden="true">↗</span></a>
+              <a href="https://github.com/odran037" target="_blank" rel="noreferrer"><span>GitHub</span><span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  
+    <footer>
+      <div class="shell footer-row">
+        <span>© <span id="year"></span> Leonardo Prates — Full-stack product & systems engineering</span>
+        <span class="footer-code">53662736772837</span>
+      </div>
+    </footer>
+  
+    <script>
+      const root = document.documentElement;
+      const themeToggle = document.getElementById("themeToggle");
+      const themeIcon = document.getElementById("themeIcon");
+      const storedTheme = localStorage.getItem("theme");
+      const preferredTheme = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+  
+      function applyTheme(theme) {
+        root.setAttribute("data-theme", theme);
+        const isDark = theme === "dark";
+        themeIcon.textContent = isDark ? "☀" : "☾";
+        themeToggle.setAttribute("aria-label", isDark ? "Switch to light theme" : "Switch to dark theme");
+      }
+  
+      applyTheme(storedTheme || preferredTheme);
+  
+      themeToggle.addEventListener("click", () => {
+        const nextTheme = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+        applyTheme(nextTheme);
+        localStorage.setItem("theme", nextTheme);
+      });
+  
+      document.getElementById("year").textContent = new Date().getFullYear();
 
-    console.log(`%c👋 Hey!
-    I like building systems that make deploys boring, tests useful, and engineering teams calmer.
-    If you're hiring for that, we should talk.`, "font-family: monospace; font-size: 12pt;");    
-  </script>
-</body>
-
+      const n = document.getElementById('n');
+      const nFooter = document.querySelector(".footer-code");
+      
+      const getRandomCharacter = (min, max) =>
+        Math.floor(Math.random() * (max - min + 1)) + min;
+      
+      const generate = (limit, min, max) => {
+        let charactersList = [];
+      
+        do {
+          charactersList.push(String.fromCharCode(getRandomCharacter(min, max)));
+        } while (--limit);
+      
+        return charactersList.join('');
+      };
+      
+      setInterval(() => {
+        let initial = n.getAttribute('data-initial');
+        let len = initial.length;
+      
+        for (let i = 0; i < 100; i++) {
+          setTimeout(() => {
+            let gen = generate(len, 48, 57);
+            n.innerText = gen;
+            nFooter.innerText = gen;
+            document.title = gen;
+          }, i * 10);
+        }
+      
+        setTimeout(() => {
+          n.innerText = initial;
+          document.title = initial;
+        }, 1000);
+      }, 5000);
+  
+      // const brandCode = document.getElementById("brand-code");
+      // const originalCode = brandCode.dataset.value;
+  
+      // function scrambleCode() {
+      //   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      //   let frame = 0;
+      //   const interval = window.setInterval(() => {
+      //     brandCode.textContent = originalCode
+      //       .split("")
+      //       .map((digit, index) => index < frame ? digit : Math.floor(Math.random() * 10))
+      //       .join("");
+      //     frame += 1;
+      //     if (frame > originalCode.length) {
+      //       window.clearInterval(interval);
+      //       brandCode.textContent = originalCode;
+      //     }
+      //   }, 45);
+      // }
+  
+      // window.setTimeout(scrambleCode, 550);
+    </script>
+  </body>
 </html>
